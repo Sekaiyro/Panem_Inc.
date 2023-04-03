@@ -15,12 +15,16 @@ class SecondActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_second)
         supportActionBar?.hide()
 
-        val btnSign: Button =
+        val btnnext: Button =
             findViewById(R.id.btnnexttwo)
-        btnSign.setOnClickListener(this)
+        btnnext.setOnClickListener(this)
 
-        val btnskip: TextView =
-            findViewById(R.id.skiptwo)
+        val btnback: Button =
+            findViewById(R.id.btnbacktwo)
+        btnback.setOnClickListener(this)
+
+        val btnskip: Button =
+            findViewById(R.id.btnskiptwo)
         btnskip.setOnClickListener(this)
     }
 
@@ -31,8 +35,12 @@ class SecondActivity : AppCompatActivity(), View.OnClickListener {
                 val moveToRegister = Intent(this@SecondActivity, ThirdActivity::class.java)
                 startActivity(moveToRegister)
             }
-            R.id.skiptwo -> {
-                val moveToRegister = Intent(this@SecondActivity, HomeActivity::class.java)
+            R.id.btnbacktwo -> {
+                val moveToRegister = Intent(this@SecondActivity, FirstActivity::class.java)
+                startActivity(moveToRegister)
+            }
+            R.id.btnskiptwo -> {
+                val moveToRegister = Intent(this@SecondActivity, MainActivity::class.java)
                 startActivity(moveToRegister)
             }
         }

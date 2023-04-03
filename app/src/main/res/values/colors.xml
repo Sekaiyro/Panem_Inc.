@@ -10,6 +10,7 @@
     <color name="warnaabu">#121b22</color>
     <color name="warnalogo">#efebdd</color>
     <color name="warnalogin">#999EA1</color>
-    <color name="underline">#999EA1</color>
+    <color name="underline">#d9d9d9</color>
     <color name="warnaiklan">#3D3D3D</color>
+    <color name="putihbutton">#f3f3f3</color>
 </resources>

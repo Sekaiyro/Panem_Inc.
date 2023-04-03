@@ -4,86 +4,155 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/warnaabu">
+    android:background="@color/warnaabu"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Develop By Adrian Pramana Wijaya"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnnextone"
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="612dp"
-        android:background="@drawable/shapebutton"
-        android:text="Next"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.914"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/skipfirst"
         android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="44dp"
-        android:fontFamily="@font/poppinsmedium"
-        android:text="Skip"
-        android:textColor="@color/warnalogo"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.858" />
-
-    <TextView
-        android:id="@+id/skipfirst3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:fontFamily="@font/poppinsmedium"
-        android:text="Develop By Adrian Pramana Wijaya"
-        android:textColor="@color/warnalogo"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.977" />
-
-    <TextView
-        android:id="@+id/textone"
-        android:layout_width="363dp"
-        android:layout_height="116dp"
-        android:layout_marginStart="24dp"
-        android:fontFamily="@font/poppinsmedium"
-        android:text="@string/textpageone"
-        android:textColor="@color/warnalogo"
-        android:textSize="20dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/buttonlogin"
+        app:backgroundTint="#4b84b8"
+        app:icon="@drawable/ic_action_forward"
+        app:iconPadding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.686" />
+        app:layout_constraintVertical_bias="0.888" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="350dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="16dp"
+    <Button
+        android:id="@+id/btnbackone"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonlogin"
+        app:icon="@drawable/ic_action_back2"
+        app:backgroundTint="@color/warnalogin"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.672"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pageonefix" />
+        app:layout_constraintVertical_bias="0.944" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+    <View
+        android:id="@+id/view"
+        android:layout_width="30dp"
+        android:layout_height="6dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/textpagethree"
+        android:textColor="#f3f3f3"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <TextView
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintGuide_begin="20dp"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:fontFamily="@font/poppinsbold"
+        android:text="Example Card"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            app:srcCompat="@drawable/cardluaran"
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="0dp"
+            app:srcCompat="@drawable/pageonefix" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="71dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logoapkdepan" />
+
+        <Button
+            android:id="@+id/btnskipone"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="265dp"
+            app:backgroundTint="#f3f3f3"
+            android:text="Skip"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsbold"
+            android:background="@drawable/buttonlogin"/>
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="6dp"
+            android:background="@drawable/buttonlogin"
+            android:layout_marginTop="658dp"
+            android:layout_marginStart="29dp"
+            android:backgroundTint="#4b84b8"/>
+        <View
+            android:layout_width="25dp"
+            android:layout_height="6dp"
+            android:background="@drawable/buttonlogin"
+            android:layout_marginTop="658dp"
+            android:layout_marginStart="62dp"
+            android:backgroundTint="@color/underline"/>
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="6dp"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="658dp"
+            android:background="@drawable/buttonlogin"
+            android:backgroundTint="@color/underline" />
+
+
+
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

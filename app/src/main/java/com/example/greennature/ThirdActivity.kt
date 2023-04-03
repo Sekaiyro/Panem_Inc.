@@ -15,9 +15,13 @@ class ThirdActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_third)
         supportActionBar?.hide()
 
-        val btnSign: Button =
+        val btnnext: Button =
             findViewById(R.id.btnnextthree)
-        btnSign.setOnClickListener(this)
+        btnnext.setOnClickListener(this)
+
+        val btnback: Button =
+            findViewById(R.id.btnbackthree)
+        btnback.setOnClickListener(this)
 
     }
 
@@ -25,7 +29,11 @@ class ThirdActivity : AppCompatActivity(), View.OnClickListener {
 
         when (v.id) {
             R.id.btnnextthree -> {
-                val moveToRegister = Intent(this@ThirdActivity, HomeActivity::class.java)
+                val moveToRegister = Intent(this@ThirdActivity, MainActivity::class.java)
+                startActivity(moveToRegister)
+            }
+            R.id.btnbackthree -> {
+                val moveToRegister = Intent(this@ThirdActivity, SecondActivity::class.java)
                 startActivity(moveToRegister)
             }
         }

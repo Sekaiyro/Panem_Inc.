@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:background="#082A3A">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/welcometext"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Good Morning,"
+            android:textColor="@color/warnalogo"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/namauser"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcometext"
+            android:text="Adrian Pramana Wijaya"
+            android:textColor="@color/warnalogo"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:layout_width="285dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/buttonlogin"
+            android:layout_below="@id/namauser"
+            android:drawableLeft="@drawable/ic_action_name"
+            android:drawablePadding="10dp"
+            android:hint="Find Service, food, or pla..."
+            android:textStyle="italic"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="23dp"
+            android:background="@drawable/logoapkdepan" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp">
+
+                <ImageButton
+                    android:id="@+id/kokone"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/fotocardfix"
+                    android:background="@drawable/cardsatu"/>
+
+                <ImageButton
+                    android:id="@+id/koktwo"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/kokone"
+                    android:src="@drawable/fotocardfix"
+                    android:background="@drawable/cardsatu"/>
+
+                <ImageButton
+                    android:id="@+id/kokthree"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/koktwo"
+                    android:src="@drawable/fotocardfix"
+                    android:background="@drawable/cardsatu"/>
+
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <ImageButton
+            android:id="@+id/menusatu"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/buttonlogin" />
+
+        <ImageButton
+            android:id="@+id/menudua"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/menusatu"
+            android:background="@drawable/buttonlogin" />
+
+        <ImageButton
+            android:id="@+id/menutiga"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/menudua"
+            android:background="@drawable/buttonlogin" />
+
+        <ImageButton
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/menutiga"
+            android:background="@drawable/buttonlogin" />
+
+        <TextView
+            android:id="@+id/recent"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Recent Transactions"
+            android:textColor="@color/warnalogo"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginTop="430dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/viewall"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/viewall"
+            android:layout_toRightOf="@+id/recent"
+            android:textColor="@color/teal_200"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginTop="430dp"
+            android:layout_marginLeft="65dp"/>
+
+        <View
+            android:layout_width="325dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="465dp"
+            android:background="@color/underline">
+        </View>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/satu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonlogin"
+            android:src="@drawable/logoapkdepan"
+            android:layout_marginTop="475dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/satutext"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:text="Buy Some Coffee"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/teal_200"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/satu"
+            android:layout_marginTop="475dp"/>
+
+        <TextView
+            android:id="@+id/satutextkedua"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:text="03.20 PM - Sept 17, 2022"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/warnalogo"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/satu"
+            android:layout_marginTop="495dp"/>
+
+        <TextView
+            android:id="@+id/hargasatu"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="Rp 92.500"
+            android:layout_below="@id/viewall"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="27sp"
+            android:textColor="@color/warnalogo"
+            android:fontFamily="@font/poppinsbold"/>
+
+        <View
+            android:layout_width="325dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="530dp"
+            android:background="@color/underline">
+        </View>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dua"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/satu"
+            android:background="@drawable/buttonlogin"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/logoapkdepan"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/duatext"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:text="Buy Some Stuff"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/teal_200"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/dua"
+            android:layout_marginTop="540dp"/>
+
+        <TextView
+            android:id="@+id/duatextkedua"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:text="02.15 PM - Sept 17, 2022"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/warnalogo"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/dua"
+            android:layout_marginTop="560dp"/>
+
+        <TextView
+            android:id="@+id/hargadua"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="Rp 42.000"
+            android:layout_below="@id/viewall"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="95sp"
+            android:textColor="@color/warnalogo"
+            android:fontFamily="@font/poppinsbold"/>
+
+        <View
+            android:layout_width="325dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="595dp"
+            android:background="@color/underline">
+        </View>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/tiga"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/dua"
+            android:background="@drawable/buttonlogin"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/logoapkdepan"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tigatext"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:text="Buy Some Fresh Food"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/teal_200"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tiga"
+            android:layout_marginTop="605dp"/>
+
+        <TextView
+            android:id="@+id/tigatextkedua"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:text="02.15 PM - Sept 17, 2022"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/warnalogo"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tiga"
+            android:layout_marginTop="625dp"/>
+
+        <TextView
+            android:id="@+id/hargatiga"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="Rp 15.000"
+            android:layout_below="@id/viewall"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="160sp"
+            android:textColor="@color/warnalogo"
+            android:fontFamily="@font/poppinsbold"/>
+
+        <View
+            android:layout_width="325dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="660dp"
+            android:background="@color/underline">
+        </View>
+
+        <ImageView
+            android:layout_width="305dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="720dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#1F6CAB"
+            android:background="@drawable/shapebutton"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="825dp"
+            android:text="Click Here"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_marginLeft="50dp"/>
+
+        <ImageView
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:background="@drawable/logoapkdepan"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="720dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="732dp"
+            android:layout_marginLeft="88dp"
+            android:text="Panem Inc."
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsbold"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="765dp"
+            android:layout_marginLeft="42dp"
+            android:textSize="12dp"
+            android:text="@string/textiklan"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsmedium"/>
+
+        <TextView
+            android:id="@+id/information"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="New Information"
+            android:textColor="@color/warnalogo"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginTop="680dp"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="715dp"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/fotoikl" />
+
+
+    </RelativeLayout>
+</ScrollView>

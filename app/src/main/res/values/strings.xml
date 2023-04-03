@@ -6,7 +6,9 @@
     <string name="textpagetwo">You can access your account anywhere, we will be present on several platforms</string>
     <string name="textpagethree">This is one example of a card that you will get after having an account card in our bank</string>
     <string name="viewall"><u>View All</u></string>
-    <string name="textiklan">Now you can make transactions to various online payment service</string>
+    <string name="textiklan">Now you can buy everything, anything, anywhere, everywhere</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="panem_inc">Panem Inc.</string>
 </resources>
