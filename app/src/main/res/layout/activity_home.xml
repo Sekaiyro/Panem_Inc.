@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/warnaabu">
+    android:background="@drawable/backgroundlayout">
 
     <TextView
         android:id="@+id/textView3"
@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:text="Button"
+        app:backgroundTint="#005e5e"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,6 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="236dp"
         android:text="Button"
+        app:backgroundTint="#005e5e"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -59,12 +61,13 @@
         android:layout_height="wrap_content"
         android:background="@drawable/buttonlogin"
         android:text="Register"
+        app:backgroundTint="#267b7e"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.279"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.922" />
+        app:layout_constraintVertical_bias="0.921" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="409dp"

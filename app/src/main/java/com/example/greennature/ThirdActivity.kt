@@ -29,7 +29,7 @@ class ThirdActivity : AppCompatActivity(), View.OnClickListener {
 
         when (v.id) {
             R.id.btnnextthree -> {
-                val moveToRegister = Intent(this@ThirdActivity, MainActivity::class.java)
+                val moveToRegister = Intent(this@ThirdActivity, HomeActivity::class.java)
                 startActivity(moveToRegister)
             }
             R.id.btnbackthree -> {

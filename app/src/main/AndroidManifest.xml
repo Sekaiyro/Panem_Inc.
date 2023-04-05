@@ -46,6 +46,18 @@
         <activity
             android:name=".DetailActivity"
             android:exported="false" />
+        <activity
+            android:name=".SendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BillsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScanActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

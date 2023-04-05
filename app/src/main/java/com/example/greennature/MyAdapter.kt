@@ -14,13 +14,13 @@ internal class MyAdapter(
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> {
-                FirstFragment()
+                PilihanFragment()
             }
             1 -> {
-                SecondFragment()
+                TagihanFragment()
             }
             2 -> {
-                ThirdFragment()
+                InsuranceFragment()
             }
             else -> getItem(position)
         }
