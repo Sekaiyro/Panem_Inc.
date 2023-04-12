@@ -7,15 +7,17 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity : AppCompatActivity(), View.OnClickListener{
     lateinit var text: TextView
     private var isHide = false
     lateinit var tabLayout: TabLayout
     lateinit var viewPager: ViewPager
+    private var currentPage = 0
+    private var numPages = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -39,16 +41,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             override fun onTabReselected(tab: TabLayout.Tab) {}
         })
 
-        val btnsend: Button =
+        val btniklan: Button =
             findViewById(R.id.buttoniklan)
-        btnsend.setOnClickListener(this)
+        btniklan.setOnClickListener(this)
 
 
         val textView = findViewById<TextView>(R.id.saldo)
         val ImageButton = findViewById<ImageButton>(R.id.showHideBtn)
         ImageButton.setOnClickListener(View.OnClickListener {
             var data = if(isHide) "Rp.16.427,21" else "•••••••••••"
-            var icon = if(isHide) R.drawable.ic_action_eye else R.drawable.ic_action_lock
+            var icon = if(isHide) R.drawable.ic_action_eye else R.drawable.eyeeewe
             isHide = !isHide
             textView.setText(data)
             ImageButton.setImageResource(icon)
@@ -57,12 +59,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
+
+
     override fun onClick(v: View) {
 
 
         when (v.id) {
             R.id.buttoniklan -> {
-                val moveToRegister = Intent(this@MainActivity, SendActivity::class.java)
+                val moveToRegister = Intent(this@MainActivity, AdsActivity::class.java)
                 startActivity(moveToRegister)
             }
 

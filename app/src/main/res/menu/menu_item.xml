@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_cardview"
+        android:title="Cardview"
+        android:icon="@drawable/ic_action_eye"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_collection"
+        android:title="Collection"
+        android:icon="@drawable/eyeeewe"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_action_eye"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_terakhir"
+        android:title="Collection"
+        android:icon="@drawable/eyeeewe"
+        app:showAsAction="always"/>
+
+</menu>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="#f4f4f4"
     android:orientation="vertical">
     
@@ -97,6 +97,13 @@
             android:layout_marginTop="133dp"
             android:layout_marginStart="30dp"
             android:src="@drawable/logoapkdepan"/>
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="143dp"
+            android:layout_marginStart="90dp"
+            android:src="@drawable/top_background"/>
 
         <TextView
             android:id="@+id/saldo"
@@ -212,7 +219,7 @@
                         android:layout_width="325dp"
                         android:layout_height="120dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:backgroundTint="#f4f4f4"
                         android:background="@drawable/shep"/>
 
@@ -220,14 +227,14 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:background="@drawable/fotoikl"/>
 
                     <TextView
                         android:layout_width="190dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="145dp"
-                        android:textSize="14dp"
+                        android:layout_marginStart="145dp"
+                        android:textSize="14sp"
                         android:layout_marginTop="17dp"
                         android:textColor="@color/black"
                         android:fontFamily="@font/poppinsbold"
@@ -238,11 +245,11 @@
                         android:layout_width="100dp"
                         android:layout_height="35dp"
                         android:layout_marginTop="85dp"
-                        android:layout_marginLeft="225dp"
+                        android:layout_marginStart="225dp"
                         android:text="Click Here"
                         android:textColor="@color/black"
                         android:fontFamily="@font/poppinsbold"
-                        android:textSize="10dp"
+                        android:textSize="11sp"
                         android:textAllCaps="false"
                         app:backgroundTint="#AFF5B2"
                         android:background="@drawable/shapebutton"/>
@@ -269,7 +276,7 @@
                             android:layout_width="325dp"
                             android:layout_height="215dp"
                             android:layout_below="@id/tabLayout"
-                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="20dp"
                             android:layout_marginTop="10dp"
                             tools:layout_editor_absoluteX="8dp" />
 
@@ -277,53 +284,24 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="160dp"
-                        android:layout_marginTop="430dp"
+                        android:layout_height="170dp"
+                        android:layout_marginTop="425dp"
                         android:backgroundTint="@color/white"
                         android:background="@drawable/nomargin"/>
 
-                    <HorizontalScrollView
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/vpSlider"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="440dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <ImageView
-                            android:id="@+id/foto1"
-                            android:layout_width="325dp"
-                            android:layout_height="120dp"
-                            android:layout_marginLeft="20dp"
-                            android:background="@drawable/shep"/>
-
-
-                        <ImageView
-                            android:id="@+id/foto2"
-                            android:layout_width="325dp"
-                            android:layout_height="120dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_toRightOf="@id/foto1"
-                            android:background="@drawable/shep"/>
-
-                        <ImageView
-                            android:id="@+id/foto3"
-                            android:layout_width="325dp"
-                            android:layout_height="120dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_toRightOf="@id/foto2"
-                            android:background="@drawable/shep"/>
-
-                    </RelativeLayout>
-                    </HorizontalScrollView>
-
+                        android:layout_height="140dp"
+                        android:layout_marginTop="430dp"/>
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="230dp"
                         android:background="@drawable/nomargin"
                         android:layout_marginTop="605dp"/>
+
 
                     <HorizontalScrollView
                         android:layout_width="match_parent"
@@ -506,7 +484,9 @@
                         android:text="Mulai"
                         android:textSize="12dp"
                         android:textAllCaps="false"
+                        android:textColor="@color/black"
                         android:fontFamily="@font/poppinsbold"
+                        app:backgroundTint="#AFF5B2"
                         android:background="@drawable/buttonlogin"/>
 
                     <ImageView
@@ -544,9 +524,46 @@
                         android:layout_marginTop="1150dp"
                         android:layout_marginLeft="20dp"/>
 
+
+
                 </FrameLayout>
             </LinearLayout>
+
         </androidx.core.widget.NestedScrollView>
+
     </RelativeLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="20dp"
+        app:fabCradleVerticalOffset="10dp"
+        app:fabCradleRoundedCornerRadius="20dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            app:elevation="0dp"
+            android:background="@android:color/transparent"
+            app:menu="@menu/menu_item"/>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_add"
+        app:layout_anchor="@id/bottomAppBar" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 </LinearLayout>
