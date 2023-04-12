@@ -2,24 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_cardview"
-        android:title="Cardview"
-        android:icon="@drawable/ic_action_eye"
+        android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@drawable/ic_action_home"
         app:showAsAction="always"/>
     <item
-        android:id="@+id/action_collection"
-        android:title="Collection"
+        android:id="@+id/action_finance"
+        android:title="Finance"
         android:icon="@drawable/eyeeewe"
         app:showAsAction="always"/>
+
+    <item android:id="@+id/miSearch"
+        android:title=""/>
     <item
-        android:id="@+id/nav_settings"
-        android:title="Settings"
-        android:icon="@drawable/ic_action_eye"
+        android:id="@+id/nav_inbox"
+        android:title="Inbox"
+        android:icon="@drawable/ic_action_inbox"
         app:showAsAction="always"/>
     <item
-        android:id="@+id/action_terakhir"
-        android:title="Collection"
-        android:icon="@drawable/eyeeewe"
+        android:id="@+id/action_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_action_profile"
         app:showAsAction="always"/>
 
 </menu>

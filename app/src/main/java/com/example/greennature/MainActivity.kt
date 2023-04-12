@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
 
+
+
         tabLayout = findViewById(R.id.tabLayout)
         viewPager = findViewById(R.id.viewPager)
         tabLayout.addTab(tabLayout.newTab().setText("Pilihan"))
@@ -49,7 +51,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         val textView = findViewById<TextView>(R.id.saldo)
         val ImageButton = findViewById<ImageButton>(R.id.showHideBtn)
         ImageButton.setOnClickListener(View.OnClickListener {
-            var data = if(isHide) "Rp.16.427,21" else "•••••••••••"
+            var data = if(isHide) "Rp.16.427.213,21" else "••••••••••••••"
             var icon = if(isHide) R.drawable.ic_action_eye else R.drawable.eyeeewe
             isHide = !isHide
             textView.setText(data)
