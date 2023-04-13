@@ -11,4 +11,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="todo">TODO</string>
     <string name="panem_inc">Panem Inc.</string>
+    <string name="hello_welcome_back">Hello, Welcome Back</string>
+    <string name="nama_user">Adrian Pramana Wijaya</string>
+    <string name="isi_search">Find Service, Send, Bills, Shop, S...</string>
+    <string name="saldo">Rp.16.427.213,21</string>
+    <string name="valid_data">08/25</string>
 </resources>

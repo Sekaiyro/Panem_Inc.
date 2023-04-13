@@ -48,10 +48,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         btniklan.setOnClickListener(this)
 
 
+
         val textView = findViewById<TextView>(R.id.saldo)
         val ImageButton = findViewById<ImageButton>(R.id.showHideBtn)
         ImageButton.setOnClickListener(View.OnClickListener {
-            var data = if(isHide) "Rp.16.427.213,21" else "••••••••••••••"
+            var data = if(isHide) "Rp.16.427.213,21" else "•••••••••••••••"
             var icon = if(isHide) R.drawable.ic_action_eye else R.drawable.eyeeewe
             isHide = !isHide
             textView.setText(data)

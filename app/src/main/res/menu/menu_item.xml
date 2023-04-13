@@ -13,7 +13,8 @@
         app:showAsAction="always"/>
 
     <item android:id="@+id/miSearch"
-        android:title=""/>
+        android:title="QRIS"
+        app:showAsAction="always"/>
     <item
         android:id="@+id/nav_inbox"
         android:title="Inbox"
