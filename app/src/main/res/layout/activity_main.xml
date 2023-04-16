@@ -7,8 +7,6 @@
     android:background="#f4f4f4"
     android:orientation="vertical">
 
-
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -23,7 +21,8 @@
             android:layout_height="50dp"
             android:layout_marginTop="25dp"
             android:layout_marginStart="20dp"
-            android:background="@drawable/bunder"/>
+            android:background="@drawable/bunder"
+            android:src="@drawable/purupil" />
 
         <TextView
             android:id="@+id/welcometext"
@@ -32,7 +31,7 @@
             android:layout_marginStart="80dp"
             android:layout_marginTop="25dp"
             android:fontFamily="@font/poppinsbold"
-            android:text="Hello, Welcome Back"
+            android:text="@string/hello_welcome_back"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -41,7 +40,7 @@
             android:layout_width="290dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/welcometext"
-            android:text="Adrian Pramana Wijaya"
+            android:text="@string/nama_user"
             android:textColor="@color/white"
             android:textSize="15sp"
             android:fontFamily="@font/poppinsbold"
@@ -54,8 +53,9 @@
             android:background="@drawable/buttonlogin"
             android:layout_below="@id/namauser"
             android:drawableStart="@drawable/ic_action_name"
+            android:paddingStart="10dp"
             android:drawablePadding="10dp"
-            android:hint="Find Service, Send, Bills, Shop, Sca.."
+            android:hint="@string/isi_search"
             android:textColorHint="@color/warnalogin"
             android:textStyle="italic"
             android:layout_marginStart="20dp"/>
@@ -70,7 +70,6 @@
             android:layout_marginEnd="23dp"
             android:background="@drawable/logoapkdepan" />
 
-
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="535dp"
@@ -80,11 +79,13 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent">
+
+        </FrameLayout>
 
         <ImageView
             android:layout_width="325dp"
-            android:layout_height="190dp"
+            android:layout_height="170dp"
             android:layout_marginTop="130dp"
             android:layout_marginStart="18dp"
             android:background="@drawable/nyobabege" />
@@ -97,11 +98,34 @@
             android:src="@drawable/logoapkdepan"/>
 
         <ImageView
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="88dp"
+            android:src="@drawable/lenter" />
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="88dp"
+            android:src="@drawable/lenter" />
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="88dp"
+            android:src="@drawable/lenter" />
+
+        <ImageView
             android:layout_width="50dp"
             android:layout_height="30dp"
-            android:layout_marginTop="210dp"
+            android:layout_marginTop="200dp"
             android:layout_marginStart="270dp"
-            android:src="@drawable/semacamnya"/>
+            android:src="@drawable/semacamnya" />
+
+
 
         <ImageView
             android:layout_width="40dp"
@@ -117,14 +141,12 @@
             android:layout_marginStart="270dp"
             android:src="@drawable/visa"/>
 
-
-
         <TextView
             android:id="@+id/saldo"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="210dp"
+            android:layout_marginTop="200dp"
             android:layout_marginEnd="45dp"
             android:shadowColor="#2e7d7e"
             android:shadowRadius="5"
@@ -132,7 +154,7 @@
             android:shadowDx="2"
             android:layout_marginBottom="45dp"
             android:fontFamily="@font/poppinsbold"
-            android:text="Rp.16.427.213,21"
+            android:text="@string/saldo"
             android:textColor="#AFF5B2"
             android:textSize="18sp" />
 
@@ -140,8 +162,8 @@
             android:id="@+id/showHideBtn"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginStart="198dp"
-            android:layout_marginTop="212dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="202dp"
             android:layout_marginBottom="225dp"
             android:src="@drawable/ic_action_eye"/>
 
@@ -149,7 +171,7 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="285dp"
+            android:layout_marginTop="265dp"
             android:shadowColor="@color/black"
             android:shadowRadius="5"
             android:shadowDy="2"
@@ -157,26 +179,26 @@
             android:layout_marginEnd="45dp"
             android:layout_marginBottom="45dp"
             android:fontFamily="@font/poppinsbold"
-            android:text="Adrian Pramana Wijaya"
+            android:text="@string/nama_user"
             android:textColor="#AFF5B2"
             android:textSize="14sp" />
+
 
         <TextView
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="270dp"
-            android:layout_marginTop="285dp"
+            android:layout_marginTop="265dp"
             android:layout_marginEnd="270dp"
             android:layout_marginBottom="270dp"
             android:fontFamily="@font/poppinsbold"
-            android:text="08/25"
+            android:text="@string/valid_data"
             android:shadowColor="@color/black"
             android:shadowRadius="5"
             android:shadowDy="2"
             android:shadowDx="2"
             android:textColor="#AFF5B2"
             android:textSize="14sp" />
-
 
         <TextView
             android:layout_width="120dp"
@@ -186,7 +208,7 @@
             android:text="Card User Holder"
             android:textSize="12sp"
             android:textColor="#CFCFCF"
-            android:layout_marginTop="265dp"/>
+            android:layout_marginTop="245dp"/>
 
         <TextView
             android:layout_width="120dp"
@@ -196,20 +218,19 @@
             android:text="Valid thru"
             android:textSize="11sp"
             android:textColor="#CFCFCF"
-            android:layout_marginTop="265dp"/>
+            android:layout_marginTop="245dp"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="420dp"
             android:layout_gravity="bottom"
-            android:layout_marginTop="335dp"
+            android:layout_marginTop="315dp"
             android:backgroundTint="#f4f4f4"
-            android:src="@drawable/homelay" />
-
+            android:src="@drawable/nom" />
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_marginTop="333dp"
+            android:layout_marginTop="313dp"
             android:layout_height="match_parent">
 
             <LinearLayout
@@ -221,80 +242,81 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="415dp"
+                        android:layout_height="155dp"
                         android:layout_marginTop="2dp"
                         android:backgroundTint="@color/white"
                         android:background="@drawable/nom"/>
 
-                    <ImageView
-                        android:layout_width="325dp"
-                        android:layout_height="120dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="20dp"
-                        android:backgroundTint="#f4f4f4"
-                        android:background="@drawable/shep"/>
+                    <ViewFlipper
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:flipInterval="2500"
+                        android:autoStart="true"
+                        android:inAnimation="@anim/slide_in_right"
+                        android:outAnimation="@anim/slide_out_left">
 
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/fotoikl"/>
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="345dp"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_marginStart="7dp"
+                            android:background="@drawable/fixdune" />
 
-                    <TextView
-                        android:layout_width="190dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="145dp"
-                        android:textSize="14sp"
-                        android:layout_marginTop="17dp"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/poppinsbold"
-                        android:text="@string/textiklan"/>
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="345dp"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="7dp"
+                            app:srcCompat="@drawable/fixbann" />
 
-                    <Button
-                        android:id="@+id/buttoniklan"
-                        android:layout_width="100dp"
-                        android:layout_height="35dp"
-                        android:layout_marginTop="85dp"
-                        android:layout_marginStart="225dp"
-                        android:text="Click Here"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/poppinsbold"
-                        android:textSize="11sp"
-                        android:textAllCaps="false"
-                        app:backgroundTint="#AFF5B2"
-                        android:background="@drawable/shapebutton"/>
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="345dp"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="7dp"
+                            app:srcCompat="@drawable/fixban" />
 
-                    
+                    </ViewFlipper>
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="165dp"
+                            android:backgroundTint="@color/white"
+                            android:background="@drawable/nom"/>
+
                     <com.google.android.material.tabs.TabLayout
                         android:id="@+id/tabLayout"
                         android:layout_width="325dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         app:tabBackground="@drawable/selector_inset"
                         android:layout_height="40dp"
                         app:tabTextColor="@color/warnalogin"
                         android:textAllCaps="false"
                         app:tabPadding="5dp"
-                        android:layout_marginTop="150dp"
+                        android:layout_marginTop="170dp"
                         android:background="@android:color/transparent"/>
 
                         <androidx.viewpager.widget.ViewPager
                             android:id="@+id/viewPager"
                             android:layout_width="325dp"
-                            android:layout_height="215dp"
+                            android:layout_height="200dp"
                             android:layout_below="@id/tabLayout"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="5dp"
                             tools:layout_editor_absoluteX="8dp" />
-
-                    </RelativeLayout>
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -303,19 +325,48 @@
                         android:backgroundTint="@color/white"
                         android:background="@drawable/nomargin"/>
 
+                        <ImageView
+                            android:layout_width="325dp"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="435dp"
+                            android:layout_marginStart="20dp"
+                            android:background="@drawable/shep"/>
 
-                    <androidx.viewpager.widget.ViewPager
-                        android:id="@+id/vpSlider"
-                        android:layout_width="match_parent"
-                        android:layout_height="140dp"
-                        android:layout_marginTop="430dp"/>
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="435dp"
+                            android:layout_marginStart="20dp"
+                            android:background="@drawable/fotoikl"/>
+
+
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="140dp"
+                            android:text="@string/textiklan"
+                            android:fontFamily="@font/poppinsbold"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="455dp"
+                            android:textSize="15sp"/>
+
+
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="170dp"
+                            android:layout_marginTop="530dp"
+                            app:backgroundTint="#AFF5B2"/>
+
+                    </RelativeLayout>
+
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="230dp"
                         android:background="@drawable/nomargin"
                         android:layout_marginTop="605dp"/>
-
 
                     <HorizontalScrollView
                         android:layout_width="match_parent"
@@ -330,7 +381,7 @@
                                 android:id="@+id/foto5"
                                 android:layout_width="170dp"
                                 android:layout_height="100dp"
-                                android:layout_marginLeft="20dp"
+                                android:layout_marginStart="20dp"
                                 android:background="@drawable/shep"/>
 
                             <TextView
@@ -338,7 +389,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/foto5"
-                                android:layout_marginLeft="20dp"
+                                android:layout_marginStart="20dp"
                                 android:text="Deals"
                                 android:textColor="@color/warnalogin"
                                 android:fontFamily="@font/poppinsbold" />
@@ -348,9 +399,9 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/deals1"
-                                android:layout_marginLeft="20dp"
+                                android:layout_marginStart="20dp"
                                 android:text="All Deals For You"
-                                android:textSize="13dp"
+                                android:textSize="13sp"
                                 android:textColor="@color/black"
                                 android:fontFamily="@font/poppinsbold" />
 
@@ -359,8 +410,8 @@
                                 android:id="@+id/foto6"
                                 android:layout_width="170dp"
                                 android:layout_height="100dp"
-                                android:layout_marginLeft="20dp"
-                                android:layout_toRightOf="@id/foto5"
+                                android:layout_marginStart="20dp"
+                                android:layout_toEndOf="@id/foto5"
                                 android:background="@drawable/shep"/>
 
                             <TextView
@@ -368,8 +419,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/foto6"
-                                android:layout_toRightOf="@id/deals1"
-                                android:layout_marginLeft="149dp"
+                                android:layout_toEndOf="@id/deals1"
+                                android:layout_marginStart="149dp"
                                 android:text="Transportasi"
                                 android:textColor="@color/warnalogin"
                                 android:fontFamily="@font/poppinsbold" />
@@ -379,9 +430,9 @@
                                 android:layout_width="170dp"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/deals2"
-                                android:layout_marginLeft="210dp"
+                                android:layout_marginStart="210dp"
                                 android:text="Eksklusif Untuk Pengguna Panem! "
-                                android:textSize="13dp"
+                                android:textSize="13sp"
                                 android:textColor="@color/black"
                                 android:fontFamily="@font/poppinsbold" />
 
@@ -389,8 +440,8 @@
                                 android:id="@+id/foto7"
                                 android:layout_width="170dp"
                                 android:layout_height="100dp"
-                                android:layout_marginLeft="20dp"
-                                android:layout_toRightOf="@id/foto6"
+                                android:layout_marginStart="20dp"
+                                android:layout_toEndOf="@id/foto6"
                                 android:background="@drawable/shep"/>
 
                             <TextView
@@ -398,8 +449,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/foto7"
-                                android:layout_toRightOf="@id/deals1"
-                                android:layout_marginLeft="339dp"
+                                android:layout_toEndOf="@id/deals1"
+                                android:layout_marginStart="339dp"
                                 android:text="Pulsa"
                                 android:textColor="@color/warnalogin"
                                 android:fontFamily="@font/poppinsbold" />
@@ -409,24 +460,25 @@
                                 android:layout_width="170dp"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/deals3"
-                                android:layout_marginLeft="400dp"
+                                android:layout_marginStart="400dp"
                                 android:text="Beli Pulsa Telkomsel Sekarang! "
-                                android:textSize="13dp"
+                                android:textSize="13sp"
                                 android:textColor="@color/black"
                                 android:fontFamily="@font/poppinsbold" />
 
                         </RelativeLayout>
+
                     </HorizontalScrollView>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Rekomendasi Pilihan"
-                        android:textSize="18dp"
+                        android:textSize="18sp"
                         android:fontFamily="@font/poppinsbold"
                         android:textColor="@color/black"
                         android:layout_marginTop="615dp"
-                        android:layout_marginLeft="20dp"/>
+                        android:layout_marginStart="20dp"/>
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -436,7 +488,7 @@
 
                     <ImageView
                         android:layout_width="325dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_height="190dp"
                         android:background="@drawable/shep"
                         android:layout_marginTop="910dp"/>
@@ -450,15 +502,15 @@
                         android:shadowDy="2"
                         android:textColor="#00e6b0"
                         android:shadowDx="2"
-                        android:layout_marginLeft="200dp"
+                        android:layout_marginStart="200dp"
                         android:layout_marginTop="950dp"
                         android:fontFamily="@font/poppinsbold"
-                        android:textSize="27dp"/>
+                        android:textSize="27sp"/>
 
                     <View
                         android:layout_width="2dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="180dp"
+                        android:layout_marginStart="180dp"
                         android:layout_marginTop="946dp"
                         android:background="@color/underline"
                         android:backgroundTint="#00e6b0">
@@ -467,7 +519,7 @@
                     <View
                         android:layout_width="325dp"
                         android:layout_height="2dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="1046dp"
                         android:background="@color/underline"
                         android:backgroundTint="@color/warnalogin">
@@ -478,7 +530,7 @@
                         android:layout_height="70dp"
                         android:layout_marginTop="1010dp"
                         android:text="Powered by"
-                        android:layout_marginLeft="75dp"
+                        android:layout_marginStart="75dp"
                         android:fontFamily="@font/poppinsmedium"/>
 
                     <TextView
@@ -486,17 +538,18 @@
                         android:layout_height="70dp"
                         android:layout_marginTop="1055dp"
                         android:text="Saatnya kamu mulai investasi dengan yang aman dan pasti"
-                        android:textSize="11dp"
-                        android:layout_marginLeft="35dp"
+                        android:textSize="11sp"
+                        android:layout_marginStart="35dp"
                         android:fontFamily="@font/poppinsmedium"/>
 
                     <Button
+                        android:id="@+id/buttoniklan"
                         android:layout_width="100dp"
                         android:layout_height="35dp"
-                        android:layout_marginLeft="225dp"
+                        android:layout_marginStart="225dp"
                         android:layout_marginTop="1057dp"
                         android:text="Mulai"
-                        android:textSize="12dp"
+                        android:textSize="12sp"
                         android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:fontFamily="@font/poppinsbold"
@@ -506,7 +559,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_marginLeft="60dp"
+                        android:layout_marginStart="60dp"
                         android:layout_marginTop="920dp"
                         android:background="@drawable/logoapkdepan"/>
 
@@ -516,11 +569,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Finansial Kamu"
-                        android:textSize="16dp"
+                        android:textSize="16sp"
                         android:fontFamily="@font/poppinsbold"
                         android:textColor="@color/black"
                         android:layout_marginTop="870dp"
-                        android:layout_marginLeft="20dp"/>
+                        android:layout_marginStart="20dp"/>
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -534,32 +587,28 @@
                         android:text="Kenali Panem Lebih Dekat"
                         android:fontFamily="@font/poppinsbold"
                         android:textColor="@color/black"
-                        android:textSize="18dp"
+                        android:textSize="18sp"
                         android:layout_marginTop="1150dp"
-                        android:layout_marginLeft="20dp"/>
-
-
+                        android:layout_marginStart="20dp"/>
 
                 </FrameLayout>
+
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
 
     </RelativeLayout>
 
-
-
-
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        app:fabCradleMargin="20dp"
+        app:fabCradleMargin="10dp"
         android:layout_gravity="bottom"
         app:backgroundTint="#f4f4f4"
         app:fabCradleVerticalOffset="10dp"
-        app:fabCradleRoundedCornerRadius="20dp">
+        app:fabCradleRoundedCornerRadius="15dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
@@ -569,20 +618,23 @@
             android:gravity="bottom"
             app:itemIconTint="@drawable/item_selector"
             android:background="@android:color/transparent"
-            app:menu="@menu/menu_item"/>
-
+            app:menu="@menu/menu_item"
+            app:itemTextColor="@color/black"
+            app:labelVisibilityMode="labeled"/>
 
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_action_qrcode"
+        android:src="@drawable/oipis"
         app:fabSize="normal"
-        app:backgroundTint="#AFF5B2"
-        app:layout_anchor="@id/bottomAppBar" />
-
-
-
+        android:clickable="true"
+        app:maxImageSize="50dp"
+        android:backgroundTint="#005d5c"
+        android:scaleType="center"
+        app:layout_anchor="@id/bottomAppBar"
+        app:tint="@color/white"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
