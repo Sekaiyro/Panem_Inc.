@@ -25,9 +25,9 @@ class FirstActivity : AppCompatActivity(), View.OnClickListener {
             findViewById(R.id.btnbackone)
         btnback.setOnClickListener(this)
 
-        val btnskip: Button =
+        val btnskipp: Button =
             findViewById(R.id.btnskipone)
-        btnskip.setOnClickListener(this)
+        btnskipp.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
