@@ -6,50 +6,109 @@
     android:layout_height="match_parent"
     tools:context=".PilihanFragment">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/buttonlogin"
-        app:backgroundTint="@color/warnalogin"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <ImageView
+        android:id="@+id/fbutton1"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/hapeg" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fbutton1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/manropesb"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            android:text="Asuransi"/>
+
+    <ImageView
+        android:id="@+id/fbutton2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="100dp"
         android:background="@drawable/buttonlogin"
         app:backgroundTint="@color/warnaabu"/>
 
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Pulsa"
+            android:layout_below="@id/fbutton2"
+            android:layout_marginLeft="110dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/manropesb"
+            android:layout_marginTop="2dp"/>
+
     <ImageView
+        android:id="@+id/fbutton3"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="180dp"
         android:background="@drawable/buttonlogin"
         app:backgroundTint="@color/warnaiklan"/>
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="260dp"
-        android:background="@drawable/buttonlogin"
-        app:backgroundTint="@color/teal_700"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Pulsa"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/fbutton3"
+            android:layout_marginLeft="180dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/manropesb"/>
 
     <ImageView
+        android:id="@+id/fbutton4"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="260dp"
+        android:background="@drawable/buttonlogin"
+        app:backgroundTint="@color/black"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Pulsa"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/fbutton4"
+            android:layout_marginLeft="250dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/manropesb" />
+
+    <ImageView
+        android:id="@+id/fbutton5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="130dp"
         android:layout_marginLeft="20dp"
         android:background="@drawable/buttonlogin"
         app:backgroundTint="@color/teal_200"/>
 
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fbutton5"
+            android:textColor="@color/black"
+            android:fontFamily="@font/manropesb"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            android:text="Asuransi"/>
+
     <ImageView
+        android:id="@+id/fbutton6"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="130dp"
         android:layout_marginLeft="100dp"
         android:background="@drawable/buttonlogin"
         app:backgroundTint="@color/black"/>
@@ -57,7 +116,7 @@
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="130dp"
         android:layout_marginLeft="180dp"
         android:background="@drawable/buttonlogin"
         app:backgroundTint="@color/black"/>
@@ -65,10 +124,12 @@
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="130dp"
         android:layout_marginLeft="260dp"
         android:background="@drawable/buttonlogin"
         app:backgroundTint="@color/black"/>
+
+    </RelativeLayout>
 
 
 </FrameLayout>
