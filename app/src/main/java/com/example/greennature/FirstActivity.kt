@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 
 class FirstActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var text: TextView
@@ -13,6 +14,7 @@ class FirstActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first)
+
         supportActionBar?.hide()
 
         val btnnext: Button =
@@ -36,7 +38,7 @@ class FirstActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(moveToRegister)
             }
             R.id.btnbackone -> {
-                val moveToRegister = Intent(this@FirstActivity, SecondActivity::class.java)
+                val moveToRegister = Intent(this@FirstActivity, SplashScreenActivity::class.java)
                 startActivity(moveToRegister)
             }
             R.id.btnskipone -> {
