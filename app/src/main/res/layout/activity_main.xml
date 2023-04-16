@@ -56,7 +56,6 @@
             android:paddingStart="10dp"
             android:drawablePadding="10dp"
             android:hint="@string/isi_search"
-            android:textColorHint="@color/warnalogin"
             android:textStyle="italic"
             android:layout_marginStart="20dp"/>
 
